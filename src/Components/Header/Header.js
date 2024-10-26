@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import SaudiFlag from "../../assets/SVG/SaudiFlag";
 
 const Header = () => {
   return (
@@ -10,6 +11,10 @@ const Header = () => {
           Register Now
         </a>
       </h3>
+      <div className="lang-switch">
+        <p>العربية</p>
+        <SaudiFlag />
+      </div>
     </header>
   );
 };

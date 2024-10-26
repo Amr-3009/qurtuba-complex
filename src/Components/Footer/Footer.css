@@ -35,6 +35,9 @@
   .footer{
     flex-direction: column;
     gap: 20px;
+    .short-summary{
+      width: 80%;
+    }
   }
 
 }

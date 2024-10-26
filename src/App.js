@@ -3,6 +3,7 @@ import "./App.css";
 import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Home from "./Routes/Home";
+import Contact from "./Routes/Contact";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
         <Route path="qurtuba-complex/home" element={<Home />} />
         {/* <Route path="qurtuba-complex/kindergarten" element={<Kindergarten />} />
         <Route path="qurtuba-complex/boys" element={<Boys />} />
-        <Route path="qurtuba-complex/girls" element={<Girls />} />
-        <Route path="qurtuba-complex/contact" element={<Contact />} /> */}
+        <Route path="qurtuba-complex/girls" element={<Girls />} />*/}
+        <Route path="qurtuba-complex/contact" element={<Contact />} /> 
       </Routes>
       <Footer />
     </div>

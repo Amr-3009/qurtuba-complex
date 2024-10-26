@@ -5,8 +5,6 @@ const USFlag = () => {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
-      width="1235"
-      height="650"
       viewBox="0 0 7410 3900"
     >
       <path d="M0,0h7410v3900H0" fill="#b31942" />

@@ -1,44 +1,224 @@
 header {
-  background-color: #edac06;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 5px 10px;
-  align-items: center;
-  h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    order: 1;
-  }
-  a {
-    text-decoration: none;
-    color: #780808;
-  }
-  a:hover {
-    color: white;
-  }
-  .lang-switch {
-    order: 2;
+  .topnav {
+    background-color: #e6e6e6;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    padding: 5px 10px;
     align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    padding: 5px 15px;
-    border-radius: 5px;
-    svg {
-      width: 30px;
-      height: 30px;
+
+    h3 {
+      font-family: "Noto Sans", "Noto Kufi Arabic", sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      text-align: center;
     }
-    button {
-      background-color: white;
-      color: black;
-      border: none;
-      padding: 5px 10px;
-      border-radius: 5px;
-      cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: #780808;
+    }
+
+    a:hover {
+      color: #edac06;
+    }
+  }
+  .bottomnav {
+    nav {
+      background-color: #edac06;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 0 20px;
+        img {
+          width: 60px;
+          height: 60px;
+        }
+        h1 {
+          font-family: "Noto Sans", "Noto Kufi Arabic", sans-serif;
+          font-weight: 400;
+          font-size: 30px;
+        }
+      }
+      .nav-links {
+        height: 100%;
+        ul {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          align-items: center;
+          gap: 5px;
+          padding: 0 20px;
+          height: 100%; /* Added to make ul full height */
+          .nav-items {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 5px;
+            svg {
+              display: none;
+              height: 300px !important;
+              width: 300px !important;
+            }
+            li {
+              list-style: none;
+              text-align: center;
+              height: 100%; /* Added to make li full height */
+              display: flex; /* Added to center the anchor */
+              align-items: center; /* Added to center the anchor */
+              justify-content: center; /* Added to center the anchor */
+              border-radius: 5px;
+              a {
+                text-decoration: none;
+                color: black;
+                font-family: "Noto Sans", "Noto Kufi Arabic", sans-serif;
+                font-weight: 500;
+                font-size: 15px;
+                padding: 5px 15px;
+                height: 100%; /* Make anchor full height */
+                display: flex; /* Center text vertically */
+                border-radius: 5px;
+                align-items: center; /* Center text vertically */
+                justify-content: center; /* Center text horizontally */
+                transition: background-color 0.3s; /* Smooth transition for hover */
+              }
+              .active {
+                background-color: #e6e6e6;
+                color: #780808;
+              }
+              a:hover {
+                background-color: #e6e6e6;
+              }
+            }
+          }
+        }
+      }
+
+      .lang-switch {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        cursor: pointer;
+        padding: 5px 15px;
+        border-radius: 5px;
+
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+
+        button {
+          color: black;
+          border: none;
+          padding: 5px 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 10px;
+          background-color: rgba(0, 0, 0, 0);
+          font-family: "Noto Sans", "Noto Kufi Arabic", sans-serif;
+          font-weight: 300;
+        }
+
+        button:hover {
+          background-color: #e6e6e6;
+        }
+
+        .selected {
+          background-color: #e6e6e6;
+        }
+      }
+      .dropdown {
+        svg {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.bigMenu {
+  width: 100%;
+  height: 100vh;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #edac06;
+  z-index: 10000;
+}
+
+@media screen and (max-width: 1220px) {
+  header {
+    .bottomnav {
+      .logo {
+        padding: 0 10px;
+        img {
+          width: 40px !important;
+          height: 40px !important;
+        }
+        h1 {
+          font-size: 20px !important;
+        }
+      }
+      nav {
+        flex-direction: column;
+        .nav-links {
+          ul {
+            display: none;
+            .nav-items {
+              flex-direction: column;
+              justify-content: center !important;
+              align-items: center !important;
+              gap: 10px;
+              width: 100% !important;
+              svg {
+                display: block;
+                cursor: pointer;
+                width: 50px;
+                height: 50px;
+              }
+              li{
+                width: 100% !important;
+                text-align: center !important;
+                a{
+                  width: 100% !important;
+                  text-align: center !important;
+                  border-radius: 50px;
+                }
+              }
+            }
+          }
+        }
+        /* .lang-switch {
+          display: none;
+        } */
+        .dropdown {
+          svg {
+            display: block;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }

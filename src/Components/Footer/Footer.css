@@ -1,0 +1,40 @@
+.footer {
+  padding: 10px;
+  background-color: #edac06;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  .privacy-policy {
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: "Noto Sans", "Noto Kufi Arabic", sans-serif;
+    }
+  }
+  .short-summary {
+    color: white;
+    width: 42%;
+    text-align: center;
+    font-family: "Noto Sans", "Noto Kufi Arabic", sans-serif;
+  }
+
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-around;
+    svg {
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+
+  .footer{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}

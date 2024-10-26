@@ -3,8 +3,6 @@ import React from "react";
 const SaudiFlag = () => {
   return (
     <svg
-      width="56"
-      height="56"
       enable-background="new 0 0 1773 1182"
       version="1.1"
       viewBox="0 0 900 600"

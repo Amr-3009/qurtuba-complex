@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import SaudiFlag from "../../assets/SVG/SaudiFlag";
+
+import { Trans, useTranslation } from "react-i18next";
+import LangChanger from "../LangChanger/LangChanger";
+
 
 const Header = () => {
+  const { t } = useTranslation();
   return (
     <header>
       <h3>
-        Tarbyh Namouthajiyah Schools in Alnarjis & Qurtoba are now open{" "}
-        <a href="https://ncle-sms.com/Admission" target="blank">
-          Register Now
-        </a>
+        {t("headerRibbon")}
+        <Trans i18nKey={t("admissionLink")}>
+          <a href="https://ncle-sms.com/Admission" target="blank">
+            {t("admissionLink")}
+          </a>
+        </Trans>
       </h3>
-      <div className="lang-switch">
-        <p>العربية</p>
-        <SaudiFlag />
-      </div>
+      <LangChanger />
     </header>
   );
 };

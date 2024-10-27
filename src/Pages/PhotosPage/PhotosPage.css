@@ -7,6 +7,13 @@
   min-height: 100vh;
   gap: 20px;
   padding: 20px 0;
+  .card{
+    .card__img{
+      img{
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 1220px) {

@@ -16,6 +16,7 @@ import FootballOlympicsPhotos from "./Routes/FootballOlympicsPhotos";
 import CultureDayPhotos from "./Routes/CulturalDayPhotos";
 import HonoringPhotos from "./Routes/HonoringPhotos";
 import TeacherTrainingPhotos from "./Routes/TeacherTrainingPhotos";
+import TeacherTrainingVideos from "./Routes/TeacherTrainingVideos";
 import FootballOlympicsVideos from "./Routes/FootballOlympicsVideos";
 
 function App() {
@@ -74,7 +75,7 @@ function App() {
         />
         <Route
           path="qurtuba-complex/boys/international/events-video/teachers-training"
-          element={<TeacherTrainingPhotos />}
+          element={<TeacherTrainingVideos />}
         />
         {/* <Route path="qurtuba-complex/girls" element={<Girls />} /> */}
         <Route path="qurtuba-complex/contact" element={<Contact />} />

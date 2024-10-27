@@ -9,8 +9,18 @@ const BoysPage = () => {
   const { t } = useTranslation();
   return (
     <div className="boys__container">
-      <CardComp cardTitle={t("international")} cardImg={BoysInt}/>
-      <CardComp cardTitle={t("national")} cardImg={BoysNat}/>
+      <CardComp
+        cardTitle={t("international")}
+        cardImg={BoysInt}
+        linkUrl={"/qurtuba-complex/boys/international"}
+        linkName={t("cardLink")}
+      />
+      <CardComp
+        cardTitle={t("national")}
+        cardImg={BoysNat}
+        linkUrl={"/qurtuba-complex/boys/national"}
+        linkName={t("cardLink")}
+      />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import i18n, { t } from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
+import { Construction } from "lucide-react";
 import { initReactI18next } from "react-i18next";
 
 i18n
@@ -55,9 +56,15 @@ i18n
           socials: `Alternatively you can choose to follow us through our official social
           media sites`,
           conDetails: "Contact details",
-          international : "International",
-          national : "National",
+          international: "International",
+          national: "National",
           cardLink: "View Events and Activities",
+          photo: "Photo Gallery",
+          video: "Video Gallery",
+          construction: "Under Construction",
+          constructionText:
+            "We're working hard to bring you something amazing!",
+          timer: "More Coming Soon",
         },
       },
       ar: {
@@ -89,9 +96,14 @@ i18n
           socials:
             "أو يمكنكم اختيار متابعتنا عبر مواقع التواصل الاجتماعي الرسمية الخاصة بنا.",
           conDetails: "تفاصيل الاتصال",
-          international : "دولي",
-          national : "وطني",
+          international: "دولي",
+          national: "وطني",
           cardLink: "اطلع على الفعاليات والأنشطة",
+          photo: "معرض الصور",
+          video: "معرض الفيديو",
+          construction: "تحت الإنشاء",
+          constructionText: "نحن نعمل بجد لنقدم لكم شيئًا مذهلاً!",
+          timer: "انتظروا المزيد قريبًا",
         },
       },
     },

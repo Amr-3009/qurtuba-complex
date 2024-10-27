@@ -1,0 +1,21 @@
+.boys__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 32px;
+    background-image: url("../../assets/images/background-image-1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1220px){
+    
+  .boys__container{
+      flex-direction: column;
+  }
+
+}

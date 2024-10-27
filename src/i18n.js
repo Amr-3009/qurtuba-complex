@@ -55,6 +55,9 @@ i18n
           socials: `Alternatively you can choose to follow us through our official social
           media sites`,
           conDetails: "Contact details",
+          international : "International",
+          national : "National",
+          cardLink: "View Events and Activities",
         },
       },
       ar: {
@@ -86,6 +89,9 @@ i18n
           socials:
             "أو يمكنكم اختيار متابعتنا عبر مواقع التواصل الاجتماعي الرسمية الخاصة بنا.",
           conDetails: "تفاصيل الاتصال",
+          international : "دولي",
+          national : "وطني",
+          cardLink: "اطلع على الفعاليات والأنشطة",
         },
       },
     },

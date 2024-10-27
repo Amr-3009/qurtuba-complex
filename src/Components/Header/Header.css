@@ -31,8 +31,6 @@ header {
       align-items: center;
       justify-content: space-between;
       padding: 5px;
-      border-bottom-left-radius: 20px;
-      border-bottom-right-radius: 20px;
       .logo {
         display: flex;
         align-items: center;

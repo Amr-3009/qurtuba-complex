@@ -1,6 +1,5 @@
 import i18n, { t } from "i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
-import { Construction } from "lucide-react";
 import { initReactI18next } from "react-i18next";
 
 i18n

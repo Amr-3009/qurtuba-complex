@@ -1,11 +1,11 @@
-.boysInternational__container{
+.boysInternational__container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   gap: 20px;
-  
+
   background-image: url("../../assets/images/background-image-3.jpg");
   background-size: cover;
   background-position: center;
@@ -17,5 +17,12 @@
   .boysInternational__container {
     flex-direction: column;
     padding: 64px 0;
+    .card {
+      .card__img {
+        img {
+          width: 200px;
+        }
+      }
+    }
   }
 }

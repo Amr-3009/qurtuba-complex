@@ -16,5 +16,12 @@
 @media screen and (max-width: 1220px) {
   .boys__container {
     flex-direction: column;
+    .card{
+      .card__img{
+        img{
+          width: 200px;
+        }
+      }
+    }
   }
 }

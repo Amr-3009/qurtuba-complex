@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="qurtuba-complex/" element={<Home />} />
         <Route path="qurtuba-complex/home" element={<Home />} />
         {/* <Route path="qurtuba-complex/kindergarten" element={<Kindergarten />} /> */}
@@ -23,7 +24,7 @@ function App() {
         />
         {/* <Route path="qurtuba-complex/girls" element={<Girls />} /> */}
         <Route path="qurtuba-complex/contact" element={<Contact />} />
-        <Route path="*" element={<Unfinished/>} />
+        <Route path="*" element={<Unfinished />} />
       </Routes>
       <Footer />
     </div>

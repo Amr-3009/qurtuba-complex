@@ -9,6 +9,7 @@ import BoysInter from "./Routes/BoysInter";
 import Unfinished from "./Routes/Unfinished";
 import EventsPhoto from "./Routes/EventsPhoto";
 import EventsVideo from "./Routes/EventsVideo";
+import ParentMeeting1 from "./Routes/ParentMeeting1";
 
 function App() {
   return (
@@ -24,8 +25,19 @@ function App() {
           path="qurtuba-complex/boys/international"
           element={<BoysInter />}
         />
-        <Route path="qurtuba-complex/boys/international/events-photo" element={<EventsPhoto />} />
-        <Route path="qurtuba-complex/boys/international/events-video" element={<EventsVideo />} />
+        <Route
+          path="qurtuba-complex/boys/international/events-photo"
+          element={<EventsPhoto />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-photo/parent-meeting-1"
+          element={<ParentMeeting1 />}
+        />
+
+        <Route
+          path="qurtuba-complex/boys/international/events-video"
+          element={<EventsVideo />}
+        />
         {/* <Route path="qurtuba-complex/girls" element={<Girls />} /> */}
         <Route path="qurtuba-complex/contact" element={<Contact />} />
         <Route path="*" element={<Unfinished />} />

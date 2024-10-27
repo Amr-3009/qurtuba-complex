@@ -10,6 +10,11 @@ import Unfinished from "./Routes/Unfinished";
 import EventsPhoto from "./Routes/EventsPhoto";
 import EventsVideo from "./Routes/EventsVideo";
 import ParentMeeting1 from "./Routes/ParentMeeting1";
+import EquesTripPhotos from "./Routes/EquesTripPhotos";
+import FootballOlympicsPhotos from "./Routes/FootballOlympicsPhotos";
+import CultureDayPhotos from "./Routes/CulturalDayPhotos";
+import HonoringPhotos from "./Routes/HonoringPhotos";
+import TeacherTrainingPhotos from "./Routes/TeacherTrainingPhotos";
 
 function App() {
   return (
@@ -32,6 +37,26 @@ function App() {
         <Route
           path="qurtuba-complex/boys/international/events-photo/parent-meeting-1"
           element={<ParentMeeting1 />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-photo/equestrian-club-trip"
+          element={<EquesTripPhotos />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-photo/football-oylmpics"
+          element={<FootballOlympicsPhotos />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-photo/cultural-day"
+          element={<CultureDayPhotos />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-photo/honoring-ceremony"
+          element={<HonoringPhotos />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-photo/teachers-training"
+          element={<TeacherTrainingPhotos />}
         />
 
         <Route

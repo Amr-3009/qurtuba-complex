@@ -7,10 +7,10 @@ import Counter from "yet-another-react-lightbox/plugins/counter";
 import Download from "yet-another-react-lightbox/plugins/download";
 import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import { ParentMeetingPhotos } from "../../ParentMeeting1Img";
-import "./ParentMeetingPhoto.css";
+import { EquesTripImgs } from "../../EquesTripImgs";
+import "./EquesTripPhoto.css";
 
-const ParentMeetingPhoto = () => {
+const EquesTripPhoto = () => {
   const [index, setIndex] = React.useState(-1);
   const fullscreenRef = React.useRef(null);
   const [closeOnPullDown, setCloseOnPullDown] = React.useState(true);
@@ -18,7 +18,7 @@ const ParentMeetingPhoto = () => {
   return (
     <>
       <ImageComp
-        photos={ParentMeetingPhotos}
+        photos={EquesTripImgs}
         onClick={(currentIndex) => setIndex(currentIndex)}
       />
       <Lightbox
@@ -28,7 +28,7 @@ const ParentMeetingPhoto = () => {
           click: () => fullscreenRef.current?.enter(),
         }}
         fullscreen={{ ref: fullscreenRef }}
-        slides={ParentMeetingPhotos}
+        slides={EquesTripImgs}
         index={index}
         open={index >= 0}
         close={() => setIndex(-1)}
@@ -37,4 +37,4 @@ const ParentMeetingPhoto = () => {
   );
 };
 
-export default ParentMeetingPhoto;
+export default EquesTripPhoto;

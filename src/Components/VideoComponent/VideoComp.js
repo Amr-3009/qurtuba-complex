@@ -1,14 +1,14 @@
 import React from "react";
 
-const VideoComp = (videos, onClick) => {
-  const handleClickVideo = (index) => {
-    onClick(index);
-  };
+const VideoComp = ({ videos, onClick }) => {
+  // const handleClickVideo = (index) => {
+  //   onClick(index);
+  // };
   return (
     <div className="image__container">
       {videos.map((video, index) => (
         <div
-          onClick={() => handleClickVideo(index)}
+          // onClick={() => handleClickVideo(index)}
           key={index}
           className="image__item"
         >

@@ -11,10 +11,12 @@ import EventsPhoto from "./Routes/EventsPhoto";
 import EventsVideo from "./Routes/EventsVideo";
 import ParentMeeting1 from "./Routes/ParentMeeting1";
 import EquesTripPhotos from "./Routes/EquesTripPhotos";
+import EquesTripVideos  from "./Routes/EquesTripVideos";
 import FootballOlympicsPhotos from "./Routes/FootballOlympicsPhotos";
 import CultureDayPhotos from "./Routes/CulturalDayPhotos";
 import HonoringPhotos from "./Routes/HonoringPhotos";
 import TeacherTrainingPhotos from "./Routes/TeacherTrainingPhotos";
+import FootballOlympicsVideos from "./Routes/FootballOlympicsVideos";
 
 function App() {
   return (
@@ -58,10 +60,21 @@ function App() {
           path="qurtuba-complex/boys/international/events-photo/teachers-training"
           element={<TeacherTrainingPhotos />}
         />
-
         <Route
           path="qurtuba-complex/boys/international/events-video"
           element={<EventsVideo />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-video/equestrian-club-trip"
+          element={<EquesTripVideos />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-video/football-oylmpics"
+          element={<FootballOlympicsVideos />}
+        />
+        <Route
+          path="qurtuba-complex/boys/international/events-video/teachers-training"
+          element={<TeacherTrainingPhotos />}
         />
         {/* <Route path="qurtuba-complex/girls" element={<Girls />} /> */}
         <Route path="qurtuba-complex/contact" element={<Contact />} />

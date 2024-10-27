@@ -1,9 +1,9 @@
 import React from "react";
 import "./CardComp.css";
 import { Link } from "react-router-dom";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 
-const CardComp = ({ cardImg, cardTitle, linkUrl, linkName }) => {
+const CardComp = ({ cardImg, cardTitle, linkUrl, linkName, cardDate }) => {
   const { t } = useTranslation();
   return (
     <div className="card">
@@ -12,7 +12,10 @@ const CardComp = ({ cardImg, cardTitle, linkUrl, linkName }) => {
       </div>
       <div className="card__content">
         <h3 className="card__title">{cardTitle}</h3>
-        <Link className="card__link" to={linkUrl}>{linkName}</Link>
+        <p className="card__date">{cardDate}</p>
+        <Link className="card__link" to={linkUrl}>
+          {linkName}
+        </Link>
       </div>
     </div>
   );

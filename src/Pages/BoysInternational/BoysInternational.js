@@ -9,8 +9,16 @@ const BoysInternational = () => {
   const { t } = useTranslation();
   return (
     <div className="boysInternational__container">
-      <MediaPage actionTitle={t("photo")} actionImage={PhotoIcon} />
-      <MediaPage actionTitle={t("video")} actionImage={VideoIcon} />
+      <MediaPage
+        actionTitle={t("photo")}
+        actionImage={PhotoIcon}
+        cardUrl={"/qurtuba-complex/boys/international/events-photo"}
+      />
+      <MediaPage
+        actionTitle={t("video")}
+        actionImage={VideoIcon}
+        cardUrl={"/qurtuba-complex/boys/international/events-video"}
+      />
     </div>
   );
 };
